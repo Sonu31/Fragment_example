@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navcontrollar: NavController
+    var sd:Int=0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
