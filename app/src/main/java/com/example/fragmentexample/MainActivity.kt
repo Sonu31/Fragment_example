@@ -14,9 +14,11 @@ import com.example.fragmentexample.databinding.FragmentFivefragmentBinding
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var navcontrollar: NavController
     var sd:Int=0
+    var sdk:String ="g"
 
 
 
