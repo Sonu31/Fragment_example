@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homefragment">
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.example.fragmentexample.fragment.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment">
+        <action
+            android:id="@+id/action_homefragment_to_secfragment"
+            app:destination="@id/secfragment" />
+        <action
+            android:id="@+id/action_homefragment_to_thirdfragment"
+            app:destination="@id/thirdfragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secfragment"
+        android:name="com.example.fragmentexample.fragment.secfragment"
+        android:label="fragment_secfragment"
+        tools:layout="@layout/fragment_secfragment">
+        <action
+            android:id="@+id/action_secfragment_to_fivefragment"
+            app:destination="@id/fivefragment" />
+        <action
+            android:id="@+id/action_secfragment_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thirdfragment"
+        android:name="com.example.fragmentexample.fragment.thirdfragment"
+        android:label="fragment_thirdfragment"
+        tools:layout="@layout/fragment_thirdfragment">
+        <action
+            android:id="@+id/action_thirdfragment_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fivefragment"
+        android:name="com.example.fragmentexample.fragment.fivefragment"
+        android:label="fragment_fivefragment"
+        tools:layout="@layout/fragment_fivefragment">
+        <action
+            android:id="@+id/action_fivefragment_to_secfragment"
+            app:destination="@id/secfragment" />
+    </fragment>
+
+</navigation>
