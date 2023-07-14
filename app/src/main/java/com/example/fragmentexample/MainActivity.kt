@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     var sd:Int=0
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
